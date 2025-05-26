@@ -16,8 +16,6 @@ if __name__ == "__main__":
 
     root.iconbitmap("./000_testing_imgs/test_icon.ico")
 
-    root.attributes("-alpha", 0.7)
-
     tk.Label(root, text="Classic Label").pack()
     ttk.Label(root, text="Themed Label").pack()
 
