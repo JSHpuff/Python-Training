@@ -5,7 +5,7 @@ if __name__ == "__main__":
     root.title('Tkinter Window - Center')
 
     window_width = 600
-    window_height = 800
+    window_height = 600
 
     # get the screen dimension
     screen_width = root.winfo_screenwidth()
