@@ -5,7 +5,6 @@ from tkinter import ttk
 if __name__ == "__main__":
     root = tk.Tk()
     root.title("Testing Setting Widgets")
-
     window_width = 600
     window_height = 600
     screen_width = root.winfo_screenwidth()
@@ -17,4 +16,5 @@ if __name__ == "__main__":
     root.iconbitmap("./000_testing_imgs/test_icon.ico")
 
     ttk.Label(root, text="Testing text for ttk").pack()
+    
     root.mainloop()
