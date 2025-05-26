@@ -42,7 +42,7 @@ if __name__ == "__main__":
     root.attributes("-topmost", 1)
 
     # Change the default icon
-    root.iconbitmap('./test_icon.ico')
+    root.iconbitmap('./000_testing_imgs/test_icon.ico')
 
 
     root.mainloop()
