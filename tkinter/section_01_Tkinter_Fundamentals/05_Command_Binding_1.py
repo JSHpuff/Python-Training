@@ -1,4 +1,5 @@
 # Introduction to Tkinter command binding
+# Learn how to respond to events using command bindings
 import tkinter as tk
 from tkinter import ttk
 
