@@ -1,3 +1,4 @@
+# show how to use the bind() method to bind an event of a widget
 import tkinter as tk
 from tkinter import ttk
 
