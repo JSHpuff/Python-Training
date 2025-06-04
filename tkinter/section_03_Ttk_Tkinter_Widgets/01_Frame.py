@@ -60,7 +60,7 @@ def create_button_frame(container):
     
     return frame
 
-def create_main_window():
+def create_main_window(): 
     root = tk.Tk()
     root.title("Replace")
     root.resizable(0, 0)
