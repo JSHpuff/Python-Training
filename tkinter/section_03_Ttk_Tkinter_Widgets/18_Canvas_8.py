@@ -10,7 +10,13 @@ if __name__ == "__main__":
 
     python_image = tk.PhotoImage(file="./000_testing_gifs/python.gif")
     python_image = python_image.subsample(5, 5)
-    canvas.create_image((100, 100),
+    image_item = canvas.create_image((100, 100),
                         image=python_image)
+    
+    canvas.tag_bind(
+        image_item,
+        "<Button-1>",
+        lambda e: canvas.delete(image_item)
+    )
     
     root.mainloop()
