@@ -79,16 +79,13 @@ def load_resized_image(path, size):
 def main():
     root = tk.Tk()
     root.title("Employee List")
-    
     icons = {
         'city': load_resized_image("./000_testing_imgs/city.png", (20, 20)),
         'male': load_resized_image("./000_testing_imgs/male.png", (20, 20)),
         'female': load_resized_image("./000_testing_imgs/female.png", (20, 20)),
     }
-
     employees = read_csv('./tkinter/section_03_Ttk_Tkinter_Widgets/employees.csv')
     create_tree_view(root, employees, icons)    
-                
     root.mainloop()
 
 
