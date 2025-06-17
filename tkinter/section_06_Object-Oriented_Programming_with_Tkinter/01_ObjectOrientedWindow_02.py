@@ -16,8 +16,8 @@ class App(tk.Tk):
         self.button["command"] = self.button_clicked
         self.button.pack()
 
-        def button_clicked(self):
-            showinfo(title="Information", message="Hello, Tkinter!")
+    def button_clicked(self):
+        showinfo(title="Information", message="Hello, Tkinter!")
 
 if __name__ == "__main__":
     app = App()
