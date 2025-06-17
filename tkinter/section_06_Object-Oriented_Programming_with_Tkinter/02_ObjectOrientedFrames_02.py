@@ -38,6 +38,8 @@ class InputFrame(ttk.Frame):
         )
         wrap_around_check.grid(column=0, row=3, sticky=tk.W)
 
+        # winfo_children:
+        # returns a list of all direct child widgets of the current widget
         for widget in self.winfo_children():
             widget.grid(padx=0, pady=5)
 
