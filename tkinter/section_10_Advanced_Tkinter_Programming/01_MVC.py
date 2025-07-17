@@ -17,7 +17,11 @@ class Model:
     @email.setter
     def email(self, value):
 
-        """ Validate the emal :param value: :return: """
+        """ 
+        Validate the emal 
+        :param value: 
+        :return: 
+        """
 
         pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 
@@ -31,7 +35,10 @@ class Model:
         
     def save(self):
 
-        """ Save the email into a file :return: """
+        """ 
+        Save the email into a file 
+        :return: 
+        """
 
         with open('emails.txt', 'a') as f:
 
@@ -101,13 +108,20 @@ class View(ttk.Frame):
 
     def set_controller(self, controller):
 
-        """ Set the controller :param controller: :return: """
+        """ 
+        Set the controller 
+        :param controller: 
+        :return: 
+        """
 
         self.controller = controller
 
     def save_button_clicked(self):
 
-        """ Handle button click event :return: """
+        """ 
+        Handle button click event 
+        :return: 
+        """
 
         if self.controller:
 
@@ -115,7 +129,11 @@ class View(ttk.Frame):
 
     def show_error(self, message):
 
-        """ Show an error message :param message: :return: """
+        """ 
+        Show an error message 
+        :param message: 
+        :return: 
+        """
 
         self.message_label['text'] = message
 
@@ -127,7 +145,11 @@ class View(ttk.Frame):
 
     def show_success(self, message):
 
-        """ Show a success message :param message: :return: """
+        """ 
+        Show a success message 
+        :param message: 
+        :return: 
+        """
 
         self.message_label['text'] = message
 
@@ -143,7 +165,10 @@ class View(ttk.Frame):
 
     def hide_message(self):
 
-        """ Hide the message :return: """
+        """ 
+        Hide the message 
+        :return: 
+        """
 
         self.message_label['text'] = ''
 
@@ -157,7 +182,11 @@ class Controller:
 
     def save(self, email):
 
-        """ Save the email :param email: :return: """
+        """ 
+        Save the email 
+        :param email: 
+        :return: 
+        """
 
         try:
 
