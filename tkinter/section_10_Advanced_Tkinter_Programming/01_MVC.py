@@ -51,15 +51,13 @@ class View(ttk.Frame):
         super().__init__(parent)
 
         # Create Widgets
-
+        
         # Label
-
         self.label = ttk.Label(self, text='Email:')
         
         self.label.grid(row=1, column=0)
 
         # Email Entry
-
         self.email_var = tk.StringVar()
 
         self.email_entry = ttk.Entry(
@@ -75,7 +73,6 @@ class View(ttk.Frame):
         self.email_entry.grid(row=1, column=1, sticky=tk.NSEW)
 
         # Save Button
-
         self.save_button = ttk.Button(
 
             self,
@@ -89,7 +86,6 @@ class View(ttk.Frame):
         self.save_button.grid(row=1, column=3, padx=10)
 
         # Message
-
         self.message_label = ttk.Label(
 
             self,
@@ -103,7 +99,6 @@ class View(ttk.Frame):
         self.message_label.grid(row=2, column=1, sticky=tk.W)
 
         # Set the Controller
-        
         self.controller = None
 
     def set_controller(self, controller):
@@ -158,7 +153,6 @@ class View(ttk.Frame):
         self.message_label.after(3000, self.hide_message)
 
         # Reset the form
-
         self.email_entry['foreground'] = 'black'
 
         self.email_var.set('')
@@ -191,19 +185,16 @@ class Controller:
         try:
 
             # Save the model
-
             self.model.email = email
 
             self.model.save()
 
             # Show a success message
-
             self.view.show_success(f'The email {email} saved!')
 
         except ValueError as error:
 
             # Show an error message
-
             self.view.show_error(error)
 
 class App(tk.Tk):
@@ -213,21 +204,17 @@ class App(tk.Tk):
         super().__init__()
 
         # Create a model
-
         model = Model('hello@pythontutorial.net')
 
         # Create a view and place it on the root window
-
         view = View(self)
 
         view.grid(row=0, column=0, padx=10, pady=10)
 
         # Create a controller
-        
         controller = Controller(model, view)
 
         # Set the controller to view
-
         view.set_controller(controller)
 
 if __name__ == '__main__':
