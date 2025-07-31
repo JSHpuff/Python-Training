@@ -7,3 +7,9 @@ def count_down(start):
         count_down(next)
 
 count_down(3)
+
+def sum(n):
+    return n + sum(n-1) if n > 0 else 0
+
+result = sum(100)
+print(result)
