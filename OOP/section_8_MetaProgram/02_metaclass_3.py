@@ -25,8 +25,10 @@ class Data(type):
         # define __repr__
         setattr(class_obj, '__repr__', Data.repr(class_obj))
 
-        # define __eq__ & __hash__
+        # define __hash__
         setattr(class_obj, '__eq__', Data.eq(class_obj))
+
+        # define __eq__
         setattr(class_obj, '__hash__', Data.hash(class_obj))
 
         return class_obj
